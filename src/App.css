@@ -221,7 +221,7 @@
     height: 100vh;
     width: 100%;
     background: rgb(117,84,160);
-    background: linear-gradient(to right,#8AAAE5 0%,#8AAAE5 23%, #FCEDDA 10%, #FCEDDA 50%);  
+    background: linear-gradient(to right, #C2C4F3 30%, #CAB6F3 50%);  
     display: flex;
     justify-content: center;
     align-items: center;
