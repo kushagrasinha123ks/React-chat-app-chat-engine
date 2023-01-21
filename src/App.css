@@ -67,13 +67,14 @@
     display: none !important;
   }
   
-  /* CUSTOM FEED */
+  /* CHAT FEED */
   
   .chat-feed {
     height: 100%;
     width: 100%;
     overflow: scroll;
-    background-color: rgb(240, 240, 240);
+    background-color: #C2C4F3;
+    background-image: linear-gradient(to bottom right, #C2C4F3 0%, #C2C4F3 50%, #CAB6F3 50%  );
   }
   
   .chat-title-container {
@@ -83,13 +84,14 @@
   }
   
   .chat-title {
-    color: #7554a0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000c4;
     font-weight: 800;
     font-size: 24px;
   }
   
   .chat-subtitle {
-    color: #7554a0;
+    color: #9185a0;
     font-weight: 600;
     font-size: 12px;
     padding-top: 4px;
@@ -111,7 +113,7 @@
     width: 44px;
     height: 44px;
     border-radius: 22px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,9 +122,10 @@
   
   .message {
     padding: 12px;
-    font-size: 16px;
-    border-radius: 6px;
+    font-size: 18px;
+    border-radius: 20px;
     max-width: 60%;
+    font-style: bold;
   }
   
   .message-image {
@@ -155,9 +158,9 @@
   .message-form-container {
     position: absolute;
     bottom: 0px;
-    width: calc(100% - 36px);
+    width: calc(100% - 17px);
     padding: 18px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
   }
   
   .message-form {
@@ -187,20 +190,21 @@
     height: 42px;
     background-color: white;
     border: 1px solid white;
-    padding: 0px 18px;
+    padding: 0px 1px;
     cursor: pointer;
   }
   
   .send-icon {
     top: 1px;
     position: relative;
-    transform: rotate(-90deg);
+    left: 55px;
   }
   
   .picture-icon {
     top: 1px;
     position: relative;
     font-size: 14px;
+    left: 50px;
   }
   
   /* FORM STYLES */
@@ -215,9 +219,9 @@
   
   .wrapper {
     height: 100vh;
-      width: 100%;
+    width: 100%;
     background: rgb(117,84,160);
-    background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
+    background: linear-gradient(to right,#8AAAE5 0%,#8AAAE5 23%, #FCEDDA 10%, #FCEDDA 50%);  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,14 +230,13 @@
   .input {
     color: #333;
     font-size: 1.2rem;
-      margin: 0 auto;
+    margin: 0 auto;
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     background-color: rgb(255, 255, 255);
-    border: none;
+    border: ridge;
     width: 90%;
     display: block;
-    border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
     outline: none;
     margin-bottom: 25px;
@@ -245,7 +248,9 @@
   
   .title {
     text-align: center;
-    color: white;
+    font-family: Garamond, serif;
+    font-style: bold;
+    color: rgb(0, 0, 0);
     margin-bottom: 30px;
     width: 100%;
     font-size: 2.3em;;
@@ -273,7 +278,7 @@
     transition: 0.4s;
   }
   .button span:after {
-    content: '\00bb';
+    content: '\27A0';
     position: absolute;
     opacity: 0;
     top: 0;
