@@ -1,4 +1,4 @@
-const MyMessage = ({ message }) => {
+const SendByMe = ({ message }) => {
     if (message.attachments && message.attachments.length > 0) {
       return (
         <img
@@ -17,5 +17,5 @@ const MyMessage = ({ message }) => {
     );
   };
   
-  export default MyMessage;
+  export default SendByMe;
   

@@ -1,4 +1,4 @@
-const TheirMessage = ({ lastMessage, message }) => {
+const SendByThem = ({ lastMessage, message }) => {
     const isFirstMessageByUser = !lastMessage || lastMessage.sender.username !== message.sender.username;
   
     return (
@@ -27,5 +27,5 @@ const TheirMessage = ({ lastMessage, message }) => {
     );
   };
   
-  export default TheirMessage;
+  export default SendByThem;
   
